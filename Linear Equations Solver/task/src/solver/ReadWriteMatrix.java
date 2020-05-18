@@ -12,7 +12,7 @@ public class ReadWriteMatrix {
         try (final Scanner scanner = new Scanner(new File(importPath))) {
             while (scanner.hasNext()) {
                 int size = scanner.nextInt();
-                result = new double[size][size];
+                result = new double[size][size+1];
                 for (int i = 0; i < size; i++) {
                     for (int j = 0; j < size + 1; j++) {
                         result[i][j] = scanner.nextDouble();
